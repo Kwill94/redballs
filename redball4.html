@@ -1,0 +1,144 @@
+<html>
+
+<head>
+<title> Learning something new! </title>
+
+<script src="../jquery.mini.js"></script>
+<script type = 'text/javascript'>
+function sayhelloworld(){
+  alert('Lets get it!!!');
+}
+</script>
+<script type='text/javascript'>
+		function moveup()  {
+		if (redball.top < 80) {
+		alert ('Stop');
+		}
+		else {redball.top=redball.top -20;}
+		}
+		   
+</script>
+<script type='text/javascript'>
+        function movedown ()  {
+		if (redball.top > 300){
+		alert ('Nice try!!');
+		}
+        else {redball.top=redball.top +20;}
+		}
+</script>
+<script type='text/javascript'> 
+		function moveleft ()  {
+		if (redball.left < 200 ){
+		alert ('Waaaaaaaaait!');
+		}
+        else {redball.left=redball.left -20;}
+		 }
+</script>
+<script type='text/javascript'>
+        function moveright ()  {
+		if (redball.left > 1100 ){
+		alert ('Uh OH!!');
+		}
+        else {redball.left=redball.left +20;}
+		  }
+</script>
+<script>
+		function moveupright()  {
+		  moveup();
+		  moveright();
+		}
+</script>
+<script type='text/javascript'>
+        function movedownright ()  {
+          movedown();
+		  moveright();
+        }
+</script>
+<script type='text/javascript'> 
+		function moveupleft ()  {
+		  moveup();
+		  moveleft();
+		  }
+		  
+</script>
+<script type='text/javascript'>
+        function movedownleft ()  {
+		  movedown();
+		  moveleft();
+		  }
+</script>
+<script type='text/javascript'>
+function movesquare(){
+for (var i=0;i<9;i++) {
+     moveright();
+	 }
+	 for (var i=0;i<9;i++) {
+	 movedown() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveleft() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveup() ;
+	 }
+	 }
+	 </script>
+<script type='text/javascript'>
+function moveoct(){
+for (var i=0;i<9;i++) {
+     moveright();
+	 }
+	 for (var i=0;i<9;i++) {
+	 movedownright() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 movedown() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 movedownleft() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveleft() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveupleft() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveup() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveupright() ;
+	 }
+	 }
+	 </script>
+	 <script type='text/javascript'>
+function movetri(){
+for (var i=0;i<9;i++) {
+     movedownright();
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveleft() ;
+	 }
+	 for (var i=0;i<9;i++) {
+	 moveupright() ;
+	 }
+	 }
+</script>
+<body>
+<img id= 'redball' style= height:200px; width:200px; src= "planet.jpg"/>
+<button onclick="sayhelloworld()">Hello World</button>
+<button onclick="moveup()">Up</button>
+<button onclick="movedown()">Down</button>
+<button onclick="moveleft ()">Slide To The Left</button>
+<button onclick="moveright ()">Slide To The Right</button>
+<button onclick="moveupright()">Up Right</button>
+<button onclick="movedownleft()">Down To The Left</button>
+<button onclick="moveupleft ()">Move Up Left</button>
+<button onclick="movedownright ()">Move Down Right</button>
+<button onclick="movesquare ()">Move In A Square</button>
+<button onclick="moveoct ()">Octagon</button>
+<button onclick="movetri ()">Triangle</button>
+
+</body>
+
+</html>
