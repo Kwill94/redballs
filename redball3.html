@@ -9,7 +9,7 @@
    
         function sayHello(){
             
-            alert('Hi there!');
+            alert('Whats Happnin!);
             
         
         
@@ -17,7 +17,7 @@
         
             function moveright(){
                 if(redball.left >= 795){
-                    console.log("OMG LOOK OUT FOR THE WALL BRO!");
+                    console.log("Planet moves right!");
                 }
             
             else {
@@ -27,7 +27,7 @@
             //MOVE RIGHT
             function moveleft(){ 
                 if(redball.left <= -340){
-                    console.log("OMG LOOK OUT FOR THE WALL BRO!");
+                    console.log("Planet moves left!");
                 }
                 
                 else{
@@ -37,7 +37,7 @@
         //MOVE LEFT
            function movetop(){
         if(redball.top <=0){
-       console.log('The ceiling is here');
+       console.log('Stars');
          }
         else{ 
         redball.top= redball.top -65;
@@ -46,7 +46,7 @@
     
     function movebottom(){
         if(redball.top >= 620){
-            console.log('bAsEmEnT');
+            console.log('Land');
         }
     else{
         redball.top= redball.top +65;
@@ -250,7 +250,7 @@
   <div class="row-fluid">
     <div class="col-xs-2">
         <h4><font color="white">Greetings!</font></h4>
-         <button onclick = "sayHello()">Hello world!</button>
+         <button onclick = "sayHello()">Hello World!</button>
          <button onclick = "planetmoveright()">Planet Movement</button>
          
          </div>
